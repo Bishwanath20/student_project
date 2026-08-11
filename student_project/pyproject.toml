@@ -6,12 +6,15 @@ authors = [
     {name = "Bishwanath20",email = "bishwanathh20@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 dependencies = [
 ]
 
 [tool.poetry]
 packages = [{include = "student_project", from = "src"}]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
